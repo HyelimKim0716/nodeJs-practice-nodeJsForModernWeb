@@ -2,6 +2,7 @@
  * 3.3 process 객체
  */
 process.argv.forEach(function (item, index) {
+    // node '_3-3...' --exit 1099 호출!
     console.log(index + ' : ' + typeof (item) + ' : ', item);
 
     if (item == '--exit') {
