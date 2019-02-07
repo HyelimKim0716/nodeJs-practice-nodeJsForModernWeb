@@ -1,5 +1,6 @@
 // EventEmitter 객체 생성
-const custom = new process.EventEmitter();
+const events = require('events');
+const custom = new events.EventEmitter();
 
 // 이벤트 연결
 custom.on('tick', function (code) {
