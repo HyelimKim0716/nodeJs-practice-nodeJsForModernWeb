@@ -1,23 +1,618 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9922ce72-c664-4541-a4e3-ecc4e311c6b7" name="Default Changelist" comment="채">
-      <change afterPath="$PROJECT_DIR$/chapter6/_6-3-3_ createCookie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter6/_6-3-4_ moveToOtherPages.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter6/_6-3-4_ pageNotFound.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter6/_6-4-1_index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter6/_6-4-1_otherPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter6/_6-4-1_separateByUrl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter6/_6-4-2_separateByMethod.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter6/_6-4-3_extractGetQuery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter6/_6-4-4_HTMLPage2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter6/_6-4-4_extractPostQuery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter6/_6-4-5_ extractCookie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter6/chances.mp3" afterDir="false" />
+    <list default="true" id="bef844eb-5f63-4884-bdf4-e5bfa2e16810" name="Default Changelist" comment="[book-nodeJsForModernWeb] Practice Chapter6">
+      <change afterPath="$PROJECT_DIR$/chapter7/7-1-3_ejsPage.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/7-1-3_sendDataToEjs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/7-2-1_jadeModuleMethod.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/7-2-1_jadePage.jade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/jadePage.2.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/.bin/acorn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/.bin/cleancss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/.bin/jade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/.bin/mkdirp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/.bin/uglifyjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn-globals/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn-globals/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn-globals/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn-globals/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/.tern-project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/AUTHORS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/bin/acorn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/bin/build-acorn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/bin/generate-identifier-regex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/bin/update_authors.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/dist/.keep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/dist/acorn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/dist/acorn_loose.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/dist/walk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/src/bin/acorn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/src/expression.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/src/identifier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/src/location.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/src/locutil.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/src/loose/acorn_loose.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/src/loose/expression.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/src/loose/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/src/loose/parseutil.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/src/loose/state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/src/loose/statement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/src/loose/tokenize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/src/lval.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/src/node.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/src/options.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/src/parseutil.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/src/state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/src/statement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/src/tokencontext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/src/tokenize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/src/tokentype.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/src/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/src/walk/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/acorn/src/whitespace.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/align-text/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/align-text/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/align-text/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/align-text/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/amdefine/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/amdefine/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/amdefine/amdefine.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/amdefine/intercept.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/amdefine/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/asap/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/asap/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/asap/asap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/asap/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/camelcase/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/camelcase/license" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/camelcase/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/camelcase/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/center-align/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/center-align/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/center-align/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/center-align/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/center-align/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/character-parser/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/character-parser/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/character-parser/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/character-parser/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/character-parser/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/History.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/bin/cleancss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/clean.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/colors/hex-name-shortener.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/colors/hsl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/colors/rgb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/imports/inliner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/properties/break-up.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/properties/can-override.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/properties/clone.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/properties/compactable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/properties/every-combination.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/properties/has-inherit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/properties/invalid-property-error.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/properties/optimizer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/properties/override-compactor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/properties/populate-components.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/properties/remove-unused.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/properties/restore-from-optimizing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/properties/restore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/properties/shorthand-compactor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/properties/validator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/properties/vendor-prefixes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/properties/wrap-for-optimizing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/selectors/advanced.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/selectors/clean-up.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/selectors/extractor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/selectors/is-special.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/selectors/merge-adjacent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/selectors/merge-media-queries.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/selectors/merge-non-adjacent-by-body.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/selectors/merge-non-adjacent-by-selector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/selectors/reduce-non-adjacent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/selectors/remove-duplicate-media-queries.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/selectors/remove-duplicates.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/selectors/reorderable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/selectors/restructure.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/selectors/simple.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/source-maps/track.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/stringifier/helpers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/stringifier/one-time.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/stringifier/simple.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/stringifier/source-maps.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/text/comments-processor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/text/escape-store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/text/expressions-processor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/text/free-text-processor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/text/urls-processor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/tokenizer/extract-properties.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/tokenizer/extract-selectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/tokenizer/tokenize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/urls/rebase.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/urls/reduce.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/urls/rewrite.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/utils/clone-array.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/utils/compatibility.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/utils/input-source-map-tracker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/utils/object.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/utils/quote-scanner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/utils/source-reader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/utils/source-tracker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/lib/utils/split.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/node_modules/commander/History.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/node_modules/commander/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/node_modules/commander/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/node_modules/commander/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/node_modules/commander/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/clean-css/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/cliui/.coveralls.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/cliui/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/cliui/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/cliui/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/cliui/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/cliui/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/cliui/node_modules/wordwrap/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/cliui/node_modules/wordwrap/README.markdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/cliui/node_modules/wordwrap/example/center.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/cliui/node_modules/wordwrap/example/meat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/cliui/node_modules/wordwrap/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/cliui/node_modules/wordwrap/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/cliui/node_modules/wordwrap/test/break.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/cliui/node_modules/wordwrap/test/idleness.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/cliui/node_modules/wordwrap/test/wrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/cliui/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/cliui/test/cliui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/commander/History.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/commander/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/commander/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/commander/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/constantinople/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/constantinople/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/constantinople/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/constantinople/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/constantinople/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/constantinople/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/constantinople/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/constantinople/test/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/css-parse/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/css-parse/History.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/css-parse/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/css-parse/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/css-parse/component.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/css-parse/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/css-parse/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/css-stringify/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/css-stringify/History.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/css-stringify/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/css-stringify/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/css-stringify/component.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/css-stringify/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/css-stringify/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/css/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/css/History.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/css/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/css/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/css/benchmark.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/css/component.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/css/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/css/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/css/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/decamelize/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/decamelize/license" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/decamelize/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/decamelize/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/ejs/Jakefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/ejs/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/ejs/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/ejs/ejs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/ejs/ejs.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/ejs/lib/ejs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/ejs/lib/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/ejs/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/graceful-readlink/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/graceful-readlink/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/graceful-readlink/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/graceful-readlink/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/graceful-readlink/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/graceful-readlink/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/is-buffer/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/is-buffer/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/is-buffer/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/is-buffer/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/is-buffer/test/basic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/is-promise/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/is-promise/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/is-promise/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/is-promise/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/is-promise/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/is-promise/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/.release.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/History.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/Readme_zh-cn.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/bin/jade.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/block-code.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/component.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/jade.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/lib/compiler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/lib/doctypes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/lib/filters-client.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/lib/filters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/lib/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/lib/inline-tags.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/lib/lexer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/lib/nodes/attrs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/lib/nodes/block-comment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/lib/nodes/block.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/lib/nodes/case.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/lib/nodes/code.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/lib/nodes/comment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/lib/nodes/doctype.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/lib/nodes/each.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/lib/nodes/filter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/lib/nodes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/lib/nodes/literal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/lib/nodes/mixin-block.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/lib/nodes/mixin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/lib/nodes/node.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/lib/nodes/tag.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/lib/nodes/text.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/lib/parser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/lib/runtime.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/lib/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/release.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jade/runtime.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jstransformer/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jstransformer/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jstransformer/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/jstransformer/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/kind-of/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/kind-of/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/kind-of/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/kind-of/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/lazy-cache/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/lazy-cache/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/lazy-cache/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/lazy-cache/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/longest/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/longest/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/longest/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/longest/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/minimist/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/minimist/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/minimist/example/parse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/minimist/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/minimist/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/minimist/readme.markdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/minimist/test/dash.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/minimist/test/default_bool.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/minimist/test/dotted.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/minimist/test/long.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/minimist/test/parse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/minimist/test/parse_modified.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/minimist/test/short.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/minimist/test/whitespace.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/mkdirp/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/mkdirp/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/mkdirp/bin/cmd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/mkdirp/bin/usage.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/mkdirp/examples/pow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/mkdirp/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/mkdirp/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/mkdirp/readme.markdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/mkdirp/test/chmod.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/mkdirp/test/clobber.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/mkdirp/test/mkdirp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/mkdirp/test/opts_fs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/mkdirp/test/opts_fs_sync.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/mkdirp/test/perm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/mkdirp/test/perm_sync.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/mkdirp/test/race.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/mkdirp/test/rel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/mkdirp/test/return.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/mkdirp/test/return_sync.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/mkdirp/test/root.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/mkdirp/test/sync.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/mkdirp/test/umask.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/mkdirp/test/umask_sync.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/optimist/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/optimist/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/optimist/example/bool.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/optimist/example/boolean_double.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/optimist/example/boolean_single.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/optimist/example/default_hash.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/optimist/example/default_singles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/optimist/example/divide.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/optimist/example/line_count.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/optimist/example/line_count_options.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/optimist/example/line_count_wrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/optimist/example/nonopt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/optimist/example/reflect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/optimist/example/short.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/optimist/example/string.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/optimist/example/usage-options.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/optimist/example/xup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/optimist/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/optimist/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/optimist/readme.markdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/optimist/test/_.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/optimist/test/_/argv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/optimist/test/_/bin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/optimist/test/parse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/optimist/test/usage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/promise/.jshintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/promise/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/promise/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/promise/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/promise/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/promise/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/promise/lib/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/promise/lib/done.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/promise/lib/es6-extensions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/promise/lib/node-extensions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/promise/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/promise/polyfill-done.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/promise/polyfill.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/repeat-string/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/repeat-string/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/repeat-string/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/repeat-string/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/right-align/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/right-align/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/right-align/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/right-align/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/source-map/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/source-map/build/assert-shim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/source-map/build/mini-require.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/source-map/build/prefix-source-map.jsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/source-map/build/prefix-utils.jsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/source-map/build/suffix-browser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/source-map/build/suffix-source-map.jsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/source-map/build/suffix-utils.jsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/source-map/build/test-prefix.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/source-map/build/test-suffix.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/source-map/lib/source-map.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/source-map/lib/source-map/array-set.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/source-map/lib/source-map/base64-vlq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/source-map/lib/source-map/base64.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/source-map/lib/source-map/binary-search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/source-map/lib/source-map/mapping-list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/source-map/lib/source-map/quick-sort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/source-map/lib/source-map/source-map-consumer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/source-map/lib/source-map/source-map-generator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/source-map/lib/source-map/source-node.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/source-map/lib/source-map/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/source-map/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/history.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/lib/shared.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/lib/transformers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/.bin/uglifyjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/is-promise/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/is-promise/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/is-promise/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/is-promise/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/is-promise/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/is-promise/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/promise/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/promise/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/promise/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/promise/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/Makefile.dryice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/build/assert-shim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/build/mini-require.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/build/prefix-source-map.jsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/build/prefix-utils.jsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/build/suffix-browser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/build/suffix-source-map.jsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/build/suffix-utils.jsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/build/test-prefix.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/build/test-suffix.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/lib/source-map.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/lib/source-map/array-set.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/lib/source-map/base64-vlq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/lib/source-map/base64.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/lib/source-map/binary-search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/lib/source-map/mapping-list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/lib/source-map/source-map-consumer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/lib/source-map/source-map-generator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/lib/source-map/source-node.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/lib/source-map/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/test/run-tests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/test/source-map/test-api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/test/source-map/test-array-set.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/test/source-map/test-base64-vlq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/test/source-map/test-base64.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/test/source-map/test-binary-search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/test/source-map/test-dog-fooding.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/test/source-map/test-source-map-consumer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/test/source-map/test-source-map-generator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/test/source-map/test-source-node.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/test/source-map/test-util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/source-map/test/source-map/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/uglify-js/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/uglify-js/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/uglify-js/bin/uglifyjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/uglify-js/lib/ast.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/uglify-js/lib/compress.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/uglify-js/lib/mozilla-ast.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/uglify-js/lib/output.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/uglify-js/lib/parse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/uglify-js/lib/scope.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/uglify-js/lib/sourcemap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/uglify-js/lib/transform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/uglify-js/lib/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/uglify-js/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/uglify-js/test/compress/arrays.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/uglify-js/test/compress/blocks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/uglify-js/test/compress/conditionals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/uglify-js/test/compress/dead-code.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/uglify-js/test/compress/debugger.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/uglify-js/test/compress/drop-unused.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/uglify-js/test/compress/issue-105.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/uglify-js/test/compress/issue-12.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/uglify-js/test/compress/issue-22.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/uglify-js/test/compress/issue-44.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/uglify-js/test/compress/issue-59.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/uglify-js/test/compress/labels.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/uglify-js/test/compress/loops.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/uglify-js/test/compress/properties.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/uglify-js/test/compress/sequences.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/uglify-js/test/compress/switch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/uglify-js/test/run-tests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/node_modules/uglify-js/tools/node.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/transformers/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/bin/extract-props.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/bin/uglifyjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/lib/ast.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/lib/compress.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/lib/mozilla-ast.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/lib/output.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/lib/parse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/lib/propmangle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/lib/scope.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/lib/sourcemap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/lib/transform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/lib/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/node_modules/source-map/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/node_modules/source-map/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/node_modules/source-map/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/node_modules/source-map/dist/source-map.debug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/node_modules/source-map/dist/source-map.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/node_modules/source-map/dist/source-map.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/node_modules/source-map/dist/source-map.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/node_modules/source-map/lib/array-set.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/node_modules/source-map/lib/base64-vlq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/node_modules/source-map/lib/base64.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/node_modules/source-map/lib/binary-search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/node_modules/source-map/lib/mapping-list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/node_modules/source-map/lib/quick-sort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/node_modules/source-map/lib/source-map-consumer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/node_modules/source-map/lib/source-map-generator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/node_modules/source-map/lib/source-node.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/node_modules/source-map/lib/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/node_modules/source-map/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/node_modules/source-map/source-map.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/tools/domprops.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/tools/exports.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/tools/node.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-js/tools/props.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-to-browserify/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-to-browserify/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-to-browserify/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-to-browserify/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-to-browserify/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-to-browserify/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/uglify-to-browserify/test/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/void-elements/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/void-elements/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/void-elements/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/void-elements/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/void-elements/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/void-elements/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/void-elements/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/void-elements/pre-publish.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/void-elements/test/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/window-size/LICENSE-MIT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/window-size/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/window-size/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/window-size/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/.bin/acorn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/.tern-project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/AUTHORS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/bin/acorn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/bin/build-acorn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/bin/generate-identifier-regex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/bin/prepublish.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/bin/update_authors.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/bin/without_eval" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/dist/.keep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/dist/acorn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/dist/acorn_csp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/dist/acorn_loose.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/dist/walk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/src/expression.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/src/identifier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/src/location.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/src/loose/acorn_loose.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/src/loose/expression.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/src/loose/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/src/loose/parseutil.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/src/loose/state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/src/loose/statement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/src/loose/tokenize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/src/lval.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/src/node.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/src/options.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/src/parseutil.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/src/state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/src/statement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/src/tokencontext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/src/tokenize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/src/tokentype.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/src/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/src/walk/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/node_modules/acorn/src/whitespace.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/with/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/wordwrap/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/wordwrap/README.markdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/wordwrap/example/center.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/wordwrap/example/meat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/wordwrap/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/wordwrap/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/wordwrap/test/break.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/wordwrap/test/idleness.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/wordwrap/test/wrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/yargs/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/yargs/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/yargs/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/yargs/completion.sh.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/yargs/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/yargs/lib/completion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/yargs/lib/parser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/yargs/lib/usage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/yargs/lib/validation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/node_modules/yargs/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter6/_6-3-1_HTMLPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/chapter6/_6-3-1_index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter6/_6-3-1_http.file.js" beforeDir="false" afterPath="$PROJECT_DIR$/chapter6/_6-3-1_http.file.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter6/_6-3-2_http.file.js" beforeDir="false" afterPath="$PROJECT_DIR$/chapter6/_6-3-2_http.file.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter7/7-1-1_ejsModule.js" beforeDir="false" afterPath="$PROJECT_DIR$/chapter7/7-1-1_ejsModuleMethod.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter7/7-1-1_ejsPage.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/chapter7/7-1-1_ejsPage.ejs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,83 +626,55 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter6/_6-4-1_separateByUrl.js">
+        <entry file="file://$PROJECT_DIR$/chapter7/7-1-1_ejsModuleMethod.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+            <state>
+              <caret column="22" selection-start-column="22" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter6/_6-4-2_separateByMethod.js">
+        <entry file="file://$PROJECT_DIR$/chapter7/7-1-3_sendDataToEjs.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="7" lean-forward="true" selection-end-line="15" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chapter7/7-2-1_jadeModuleMethod.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter6/_6-4-3_extractGetQuery.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter6/_6-4-4_extractPostQuery.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+              <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/chapter6/_6-4-5_ extractCookie.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="74" selection-start-line="22" selection-start-column="74" selection-end-line="22" selection-end-column="74" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter6/_6-4-4_HTMLPage2.html">
+        <entry file="file://$PROJECT_DIR$/chapter7/7-2-1_jadePage.jade">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter6/_6-3-1_index.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter6/_6-3-1_http.file.js">
+        <entry file="file://$PROJECT_DIR$/chapter7/jadePage.2.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter6/_6-4-1_index.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter6/_6-4-1_otherPage.html">
+        <entry file="file://$PROJECT_DIR$/chapter7/7-1-1_ejsPage.ejs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -117,8 +684,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -129,61 +696,64 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/chapter2.js" />
-        <option value="$PROJECT_DIR$/chapter4/_4-1_osModule.js" />
-        <option value="$PROJECT_DIR$/chapter4/_4-2_urlModule.js" />
-        <option value="$PROJECT_DIR$/chapter4/_4-3_queryStringModule.js" />
-        <option value="$PROJECT_DIR$/chapter4/_4-4_utilModule.js" />
-        <option value="$PROJECT_DIR$/chapter4/_4-5_cryptoModule.js" />
-        <option value="$PROJECT_DIR$/chapter4/textfile.txt" />
-        <option value="$PROJECT_DIR$/chapter4/textfile2.txt" />
-        <option value="$PROJECT_DIR$/chapter4/textfile1.txt" />
-        <option value="$PROJECT_DIR$/chapter4/_4-6_fileSystemModule.js" />
-        <option value="$PROJECT_DIR$/chapter4/_4-6-2_fileSystemModule_writeFile.js" />
-        <option value="$PROJECT_DIR$/chapter4/_4-6-3_exception.js" />
+        <option value="$PROJECT_DIR$/_3-1_globalVariable.js" />
+        <option value="$PROJECT_DIR$/_3-2_consoleObject.js" />
+        <option value="$PROJECT_DIR$/_3-3_processObject.js" />
+        <option value="$PROJECT_DIR$/module.js" />
+        <option value="$PROJECT_DIR$/_3-4_exportsObjectsModule.js" />
+        <option value="$PROJECT_DIR$/chpater3/_3-3_processObject.js" />
+        <option value="$PROJECT_DIR$/chpater3/_3-4_exportsObjectsModule.js" />
+        <option value="$PROJECT_DIR$/chapter5/_5-1_eventConnection'.js" />
+        <option value="$PROJECT_DIR$/chapter5/_5-1_eventConnection.js" />
+        <option value="$PROJECT_DIR$/chapter5/_5-2_eventConnectionLimit.js" />
+        <option value="$PROJECT_DIR$/chapter5/_5-3_removeEvent.js" />
+        <option value="$PROJECT_DIR$/chapter5/_5-4_occurEventForcedely.js" />
+        <option value="$PROJECT_DIR$/chapter5/_5-5_app.js" />
+        <option value="$PROJECT_DIR$/chapter5/_5-5_rint.js" />
+        <option value="$PROJECT_DIR$/chapter6/_6-2_serverObject.js" />
+        <option value="$PROJECT_DIR$/chapter6/_6-3_responseObject.js" />
+        <option value="$PROJECT_DIR$/chapter6/_6-3-1_HTMLPage.html" />
+        <option value="$PROJECT_DIR$/chapter6/_6-3-1_http.file.js" />
         <option value="$PROJECT_DIR$/chapter6/_6-3-2_http.file.js" />
-        <option value="$PROJECT_DIR$/chapter6/_6-3-3_ createCookie.js" />
-        <option value="$PROJECT_DIR$/chapter6/_6-3-4_ moveToOtherPages.js" />
-        <option value="$PROJECT_DIR$/chapter6/_6-3-4_ pageNotFound.js" />
-        <option value="$PROJECT_DIR$/chapter6/_6-4-1_app.js" />
-        <option value="$PROJECT_DIR$/chapter6/_6-4-1_otherPage.html" />
-        <option value="$PROJECT_DIR$/chapter6/_6-4-1_separateByUrl.js" />
-        <option value="$PROJECT_DIR$/chapter6/_6-4-2_separateByMethod.js" />
-        <option value="$PROJECT_DIR$/chapter6/_6-4-3_extractGetQuery.js" />
-        <option value="$PROJECT_DIR$/chapter6/_6-4-3_HTMLPage2.html" />
-        <option value="$PROJECT_DIR$/chapter6/_6-4-3_extractPostQuery.js" />
-        <option value="$PROJECT_DIR$/chapter6/_6-4-4_extractPostQuery.js" />
-        <option value="$PROJECT_DIR$/chapter6/_6-4-5_ extractCookie.js" />
+        <option value="$PROJECT_DIR$/chapter5/_5-5_eventEmitter.js" />
+        <option value="$PROJECT_DIR$/chapter6/_6-2_serverObjectRequest.js" />
+        <option value="$PROJECT_DIR$/chapter7/7-1-1_ejsModule.js" />
+        <option value="$PROJECT_DIR$/chapter7/7-1-1_ejsPage.ejs" />
+        <option value="$PROJECT_DIR$/chapter7/7-1-3_sendDataToEjs.js" />
+        <option value="$PROJECT_DIR$/chapter7/7-1-3_ejsPage.ejs" />
+        <option value="$PROJECT_DIR$/chapter7/7-2-1_jadeModuleMethod.js" />
+        <option value="$PROJECT_DIR$/chapter7/7-2-1_jadePage.jade" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="640" />
-    <option name="height" value="712" />
+    <option name="width" value="840" />
+    <option name="height" value="946" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="nodeJs-practice-nodeJsForModernWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodeJs-practice-nodeJsForModernWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="book-nodeJsForModernWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="book-nodeJsForModernWeb" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="nodeJs-practice-nodeJsForModernWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodeJs-practice-nodeJsForModernWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter6" type="462c0819:PsiDirectoryNode" />
+              <item name="book-nodeJsForModernWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="book-nodeJsForModernWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter7" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -192,16 +762,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/chapter7" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/chapter6" />
-      <recent name="$PROJECT_DIR$/chpater3" />
-      <recent name="$PROJECT_DIR$/chapter2" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/chapter6" />
-      <recent name="$PROJECT_DIR$/chapter4" />
+      <recent name="$PROJECT_DIR$/chapter3" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -221,37 +790,69 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9922ce72-c664-4541-a4e3-ecc4e311c6b7" name="Default Changelist" comment="" />
-      <created>1548118004224</created>
+      <changelist id="bef844eb-5f63-4884-bdf4-e5bfa2e16810" name="Default Changelist" comment="" />
+      <created>1548081619786</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1548118004224</updated>
-      <workItem from="1548118006098" duration="690000" />
-      <workItem from="1548153294861" duration="2904000" />
-      <workItem from="1548849772368" duration="88000" />
-      <workItem from="1549533493541" duration="3406000" />
+      <updated>1548081619786</updated>
+      <workItem from="1548081620994" duration="2331000" />
+      <workItem from="1548591898783" duration="1045000" />
+      <workItem from="1549456011307" duration="5821000" />
+      <workItem from="1549544758590" duration="2081000" />
+      <workItem from="1549547376137" duration="356000" />
+      <workItem from="1549623515528" duration="95000" />
+      <workItem from="1549894507145" duration="2136000" />
     </task>
+    <task id="LOCAL-00001" summary="[book-nodeJsForModernWeb] Practice Chapter3">
+      <created>1548083881581</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1548083881581</updated>
+    </task>
+    <task id="LOCAL-00002" summary="[book-nodeJsForModernWeb] Practice Chapter5">
+      <created>1549459290611</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1549459290611</updated>
+    </task>
+    <task id="LOCAL-00003" summary="[book-nodeJsForModernWeb] Practice Chapter6">
+      <created>1549466280659</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1549466280659</updated>
+    </task>
+    <task id="LOCAL-00004" summary="[book-nodeJsForModernWeb] Chapter5, Chapter6 Study 후">
+      <created>1549547730862</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1549547730862</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7088000" />
+    <option name="totallyTimeSpent" value="13865000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="640" height="712" extended-state="0" />
+    <frame x="0" y="23" width="840" height="946" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24555735" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24908425" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32580644" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32901135" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32419354" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3293556" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.19789228" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -261,171 +862,183 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[book-nodeJsForModernWeb] Practice Chapter3" />
+    <MESSAGE value="[book-nodeJsForModernWeb] Practice Chapter5" />
+    <MESSAGE value="[book-nodeJsForModernWeb] Practice Chapter6" />
+    <MESSAGE value="[book-nodeJsForModernWeb] Chapter5, Chapter6 Study 후" />
+    <option name="LAST_COMMIT_MESSAGE" value="[book-nodeJsForModernWeb] Chapter5, Chapter6 Study 후" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/chapter2.js" />
-    <entry file="file://$PROJECT_DIR$/chapter4/_4-1_osModule.js">
+    <entry file="file://$PROJECT_DIR$/_3-1_globalVariable.js" />
+    <entry file="file://$PROJECT_DIR$/_3-2_consoleObject.js" />
+    <entry file="file://$PROJECT_DIR$/_3-3_processObject.js" />
+    <entry file="file://$PROJECT_DIR$/module.js" />
+    <entry file="file://$PROJECT_DIR$/_3-4_exportsObjectsModule.js" />
+    <entry file="file://$PROJECT_DIR$/chapter3/_3-4_exportsObjectsModule.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        <state relative-caret-position="30">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapter4/_4-2_urlModule.js">
+    <entry file="file://$PROJECT_DIR$/chapter3/_3-3_processObject.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapter4/_4-3_queryStringModule.js">
+    <entry file="file://$PROJECT_DIR$/chapter5/_5-2_eventConnectionLimit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter5/_5-1_eventConnection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter6/_6-3-1_HTMLPage.html" />
+    <entry file="file://$PROJECT_DIR$/chapter5/_5-4_occurEventForcedely.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter5/_5-5_eventEmitter.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapter4/_4-4_utilModule.js">
+    <entry file="file://$PROJECT_DIR$/chapter5/_5-5_rint.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        <state relative-caret-position="15">
+          <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapter4/_4-5_cryptoModule.js">
+    <entry file="file://$PROJECT_DIR$/chapter6/_6-2_serverObject.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapter4/_4-6-1_fileSystemModule_readFile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter4/_4-6-2_fileSystemModule_writeFile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter4/writeAsyncFile.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter4/writeSyncFile.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter4/readAsyncFile.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter4/readSyncFile.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter4/_4-6-3_exception.js">
+    <entry file="file://$PROJECT_DIR$/chapter6/_6-2_serverObjectRequest.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter6/_6-3-4_ moveToOtherPages.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter6/_6-3-4_ pageNotFound.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter6/_6-3_responseObject.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="60" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter6/_6-3-1_http.file.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chapter6/_6-3-2_http.file.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        <state relative-caret-position="285">
+          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapter6/_6-3-3_ createCookie.js">
+    <entry file="file://$PROJECT_DIR$/chapter5/_5-3_removeEvent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="60" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
+        <state relative-caret-position="255">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapter6/_6-3-4_ moveToOtherPages.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter6/_6-3-4_ pageNotFound.js">
+    <entry file="file://$PROJECT_DIR$/chapter5/_5-5_app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter6/_6-3-1_index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter6/_6-3-1_http.file.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter6/_6-4-1_index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter6/_6-4-1_otherPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter6/_6-4-1_separateByUrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chapter6/_6-4-2_separateByMethod.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        <state relative-caret-position="165">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapter6/_6-4-3_extractGetQuery.js">
+    <entry file="file://$PROJECT_DIR$/chapter7/7-1-1_ejsPage.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapter6/_6-4-4_HTMLPage2.html">
+    <entry file="file://$PROJECT_DIR$/chapter7/7-1-1_ejsModuleMethod.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter7/7-1-3_ejsPage.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter7/7-1-3_sendDataToEjs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="7" lean-forward="true" selection-end-line="15" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter7/7-2-1_jadeModuleMethod.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter7/jadePage.2.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter7/7-2-1_jadePage.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter6/_6-4-4_extractPostQuery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter6/_6-4-5_ extractCookie.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="74" selection-start-line="22" selection-start-column="74" selection-end-line="22" selection-end-column="74" />
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
