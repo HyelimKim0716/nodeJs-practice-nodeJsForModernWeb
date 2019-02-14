@@ -13,7 +13,12 @@
             });
     body
         // JADE String
-        h1 Hello!
+        h1 #{name} .. !
+        h2= description
         hr
         a(href="http://naver.com", data-test="multiple Attribute") Go to naver
-
+        hr
+        - for(let i = 0; i < 10; i++) {
+            p
+                a(href="http://www.daum.net") Go To Daum #{i}
+        - }
