@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- socket.io.js 파일 추가 -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        window.onload = function () {
+            // 소켓을 생성합니다.
+            var socket = io.connect();
+
+            // 서버에서 smart 이벤트 발생 시 소켓 이벤트를 연결
+            socket.on('smart', function (data) {
+                alert(data);    // 서버에서 전달된 데이터 출력
+            });
+
+            // 문서 객체 이벤트를 연결합니다.
+            // 'button' 클릭 시 서버에 rint 이벤트 발생
+            document.getElementById('button').onclick = function () {
+                // 변수를 선언합니다.
+                var text = document.getElementById('text').value;
+
+                // 데이터를 전송합니다.
+                socket.emit('rint', text);
+            };
+        };
+    </script>
+</head>
+<body>
+    <input type="text" id="text" />
+    <input type="button" id="button" value="echo" />    <!-- 이벤트 발생-->
+</body>
+</html>
