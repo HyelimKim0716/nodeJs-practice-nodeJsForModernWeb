@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Node.js Programming for Modern Web</title>
+    <style>
+        .line { overflow: hidden; }
+        .seat {
+            margin: 2px; float: left;
+            width: 30px; height: 30px;
+            border-radius: 3px;
+        }
+        
+        .enable { background: gray; }
+        .enable:hover { background: black; }
+        .disable { background: red; }
+    </style>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- 소켓 생성 -->
+    <script>
+        // 소켓 이벤트를 수행합니다.
+        var socket = io.connect();
+
+        // 이벤트를 연결합니다.
+        socket.on('reserve', function (data) {
+            // 좌석 클래스 변경 및 이벤트 리스너 제거
+            var $target = $('div[data-x = ' + data.x + '][data-y = ' + data.y + ']');
+            $target.removeClass('enable');
+            $target.addClass('disable');
+        });
+    </script>
+
+    <!-- 초기 좌석 생성 -->
+    <script>
+        $(document).ready(function () {
+            // 변수를 선언합니다.
+            var onClickSeat = function () {
+                var x = $(this).attr('data-x');
+                var y = $(this).attr('data-y');
+
+                if (confirm('좌석을 예약하시겠습니까?')) {
+                    $(this).off('click');
+
+                    // 좌석 클릭 시 이벤트가 발생한 좌석의 data-x 속성 값과 data-y 속성 값을 추출해 서버에 전송
+                    socket.emit('reserve', {
+                        x: x,
+                        y: y
+                    });
+                } else {
+                    alert('취소되었습니다.');
+                }
+            };
+
+            // Ajax를 수행합니다.
+            // http://127.0.0.1:52273/seats 에 위치하는 변수 seats 의 JSON 파일을 가져와 구성
+            $.getJSON('/seats', {
+                // 인터넷 익스플로러는 같은 URL 에 연속적으로 요청이 발생하면 이전에 불러온 데이터 제공
+                // 현재 시간을 기반으로 URL 을 매번 다른 형태로 전달하기 위힘
+                dummy: new Date().getTime()
+            }, function (data) {
+                // 좌석을 생성합니다.
+                // seats 변수 : 2차원 배열, 반복문 * 2
+                $.each(data, function (indexY, line) {
+                    // 문서 객체를 생성합니다.
+                    var $line = $('<div></div>').addClass('line');
+
+                    $.each(line, function (indexX, seat) {
+                        // 문서 객체를 생성하고 변수 $line에 추가합니다.
+                        // 선택 좌석 위치 정보
+                        var $output = $('<div></div>', {
+                            'class': 'seat',
+                            'data-x': indexX,
+                            'data-y': indexY
+                        }).appendTo($line);
+
+                        if (seat == 1) {
+                            // 좌석이 비어 있으면 enable 클래스와 click 리스너를 추가합니다.
+                            $output.addClass('enable').on('click', onClickSeat);
+                        } else if (seat == 2) {
+                            // 좌석이 사용 불가능하면 disable 클래스를 추가합니다.
+                            $output.addClass('disable');
+                        }
+                    });
+
+                    // 문서 객체를 추가합니다.
+                    $line.appendTo('body');
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
