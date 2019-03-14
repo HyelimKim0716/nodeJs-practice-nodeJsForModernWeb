@@ -81,10 +81,10 @@ io.sockets.on('connection', function (socket) {
     // cart 이벤트 : 사용자가 물건을 카트에 넣으면 발생하는 이벤트
     socket.on('cart', function (index) {
         console.log("[Event] cart, cart[" + index + "] : " + cart[index]);
-        // 물건 개수를 감소시킵니다.
+        // 물건 개수 감소
         products[index].count--;
 
-        // 카트에 물건을 넣고 타이머를 시작합니다.
+        // 카트에 물건을 넣고 타이머 시작
         // 10분 후 자동으로 onReturn() 함수 실행
         cart[index] = {};
         cart[index].index = index;
@@ -92,7 +92,7 @@ io.sockets.on('connection', function (socket) {
             onReturn(index);
         }, 1000 * 60 * 10);
 
-        // count 이벤트를 발생시킵니다.
+        // count 이벤트를 발생
         io.sockets.emit('count', {
             index: index,
             count: products[index].count
@@ -101,13 +101,13 @@ io.sockets.on('connection', function (socket) {
 
     // buy 이벤트 : 사용자가 카트에 물건을 넣고 구매 버튼을 누를 때 발생하는 이벤트
     socket.on('buy', function (index) {
-        console.log("[Event] buy, cart[" + index + "] : " + cart[index]);
+        console.log("[Event] buy, cart[" + index + "] : " + kart[index]);
 
-        // 타이머를 제거합니다.
-        clearTimeout(cart[index].timerID);
+        // 타이머 제거
+        clearTimeout(kart[index].timerID);
 
-        // 카트에서 물건을 제거합니다.
-        delete cart[index];
+        // 카트에서 물건을 제거
+        delete kart[index];
 
         // count 이벤트를 발생시킵니다.
         io.sockets.emit('count', {
