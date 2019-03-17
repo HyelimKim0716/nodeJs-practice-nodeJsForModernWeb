@@ -10,3 +10,9 @@ var socket = net.connect(52273, '127.0.0.1', function () {
 socket.on('data', function (data) {
     console.log(data.toString());
 });
+
+// 입력 활성화
+process.stdin.resume();
+process.stdin.on('data', function (chunk) {
+    socket.write('ECHO: ' + chunk);
+});
