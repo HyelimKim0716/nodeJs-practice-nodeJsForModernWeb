@@ -17,7 +17,7 @@ var server = http.createServer(function (request, response) {
 // 소켓 서버를 생성 및 실행합니다.
 var io = socketio.listen(server);
 io.sockets.on('connection', function (socket) {
-    // rint 이벤트
+    // rint 이벤트 발생 시
     socket.on('rint', function (data) {
         // public 통신
         io.sockets.emit('smart', data);

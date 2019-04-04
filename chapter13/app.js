@@ -76,6 +76,7 @@ io.sockets.on('connection', function (socket) {
     };
 
     // 변수(객체) 선언
+    // javaScript 클로저를 이용해 각 클라이언트에 데이터를 저장하는 것과 같은 효과
     var cart = {};
 
     // cart 이벤트 : 사용자가 물건을 카트에 넣으면 발생하는 이벤트

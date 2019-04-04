@@ -30,7 +30,7 @@ var app = express();
 // 라우트를 수행합니다.
 app.get('/', function (request, response, next) {
     fs.readFile('HTMLPage.html', function (error, data) {
-        // seats 를 JSON 형태로 제공
+        // seats 를 JSON 형태로 제공 (Ajax 를 사용해 변수 seats 를 화면에 출력할 것이므로)
         response.send(data.toString());
     });
 });

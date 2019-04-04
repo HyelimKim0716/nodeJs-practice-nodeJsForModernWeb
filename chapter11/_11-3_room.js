@@ -27,10 +27,12 @@ io.sockets.on('connection', function (socket) {
     socket.on('join', function (data) {
         roomName = data;
         socket.join(data);
+        console.log("join event room name : " + roomName + ", data: " + data);
     });
 
     // message 이벤트
     socket.on('message', function (data) {
+        console.log("message event room name: " + roomName + ", data: " + data);
         io.sockets.in(roomName).emit('message', 'test');
     })
 });
